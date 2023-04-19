@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Cesar863/LeetCode#readme",
   "dependencies": {
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
