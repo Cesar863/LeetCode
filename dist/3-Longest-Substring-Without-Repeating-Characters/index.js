@@ -2,20 +2,18 @@
  * @param {string} s
  * @return {number}
  */
-
-const string = 'abcabcbb'
-
-var lengthOfLongestSubstring = (s:string) => {
-    let characterIndex: object = {}
-    for(let i = 0; i < 256; i++){
+const string = 'abcabcbb';
+var lengthOfLongestSubstring = (s) => {
+    let characterIndex = {};
+    for (let i = 0; i < 256; i++) {
         characterIndex[i] = -1;
     }
     let start = 0;
     let end = 0;
     let maxLength = 0;
-    while(end < s.length) {
+    while (end < s.length) {
         let char = s.charCodeAt(end);
-        if(characterIndex[char] >= start){
+        if (characterIndex[char] >= start) {
             start = characterIndex[char] + 1;
         }
         characterIndex[char] = end;
@@ -24,5 +22,5 @@ var lengthOfLongestSubstring = (s:string) => {
     }
     return maxLength;
 };
-
 lengthOfLongestSubstring(string);
+//# sourceMappingURL=index.js.map
