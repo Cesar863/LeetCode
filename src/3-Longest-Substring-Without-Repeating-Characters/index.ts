@@ -26,3 +26,4 @@ var lengthOfLongestSubstring = (s:string) => {
 };
 
 lengthOfLongestSubstring(string);
+
