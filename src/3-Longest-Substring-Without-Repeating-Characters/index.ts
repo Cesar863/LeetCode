@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-const string = 'abcabcbb'
+const string = 'abcabcbbdef'
 
 var lengthOfLongestSubstring = (s:string) => {
     let characterIndex: object = {}
