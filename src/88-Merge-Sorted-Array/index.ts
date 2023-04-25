@@ -53,13 +53,26 @@
 
  merge(numbs1, mLet, numsb2, nLet);
 
-//  function compareFn(a, b) {
-//     if (a is less than b by some ordering criterion) {
-//       return -1;
-//     }
-//     if (a is greater than b by the ordering criterion) {
-//       return 1;
-//     }
-//     // a must be equal to b
-//     return 0;
-//   }
+// Simplified code
+function mergeSimplified(nums1: number[], m: number, nums2: number[], n: number): void {
+    let i = m - 1;
+    let j = n - 1;
+    let k = m + n - 1;
+    
+    while (j >= 0) {
+        if (i >= 0 && nums1[i] > nums2[j]) {
+            nums1[k] = nums1[i];
+            i--;
+        } else {
+            nums1[k] = nums2[j];
+            j--;
+        }
+        k--;
+    }
+
+    while (i >= 0) {
+        nums1[k] = nums1[i];
+        i--;
+        k--;
+    }
+ };
