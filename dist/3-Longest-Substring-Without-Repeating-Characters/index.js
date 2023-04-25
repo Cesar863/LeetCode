@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-const string = 'abcabcbb';
+const string = 'abcabcbbdef';
 var lengthOfLongestSubstring = (s) => {
     let characterIndex = {};
     for (let i = 0; i < 256; i++) {
